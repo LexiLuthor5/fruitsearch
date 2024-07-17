@@ -1,0 +1,44 @@
+body{
+    font-family: Arial, sans-sarif;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+}
+
+.container{
+    position: relative;
+    width: 300px;
+}
+
+#searchBar{
+    width:100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.suggestions{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-top: none;
+    max-height: 150px;
+    overflow-y: auto;
+    background: #fff;
+    position: absolute;
+    z-index: 1000;
+}
+
+.suggestions li{
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestions li:hover,
+.suggestions li.highlighted{
+    background: #f0f0f0;
+}
